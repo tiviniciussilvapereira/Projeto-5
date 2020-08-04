@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+/***DIVS GERAIS***/
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/***FIM DIVS GERAIS***/
+
+
+/***HEADER***/
+header{
+    padding: 20px 2%;
+    height: 100px;
+}
+
+header .logo-header{
+    width: 250px;
+    height: 60px;
+    background-color: #b4b4b4b4;
+    float: left;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    padding: 0 20px;
+}
+header nav.menu-desktop ul li a{
+    text-decoration: none;
+    color: #383838;
+    font-size: 24px;
+}
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+    width: 35px;
+    height: 35px;
+    background-image: url(../imagens/menu.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+header nav.menu-mobile ul li{
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(20, 20, 20);
+
+}
+header nav.menu-mobile ul li a{
+    text-decoration: none;
+    color: #383838;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+
+    nav.menu-mobile:hover ul{
+        display: block;
+    }
+}
+/***FIM HEADER***/
+
+/***SECTION BANNER**/
+section.banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    min-height: 600px;
+    max-height: 800px;
+    background-color: black;
+    background-image: url(../imagens/Banner1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    font-style: italic;
+}
+
+.text-container{
+    padding: 250px;
+}
+
+.text-banner{
+    width: 300px;
+    height: 40px;
+    color: white;
+    background-image: url(../imagens/text-container.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    position: relative;
+    left: -110px;
+}
+
+.text-banner:nth-of-type(2){
+    width: 300px;
+    height: 40px;
+    position: relative;
+    left: -140px;
+}
+.text-banner:nth-of-type(3){
+    width: 300px;
+    height: 40px;
+    position: relative;
+    left: -170px
+}
+
+.text-banner:nth-of-type(4){
+    width: 300px;
+    height:  40px;
+    color: rgb(20, 20, 20);
+    background-image: url(../imagens/text-container-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: -200px;
+}
+@media screen and (max-width: 1170px){
+    .text-banner{
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 0px;
+        position: relative;
+        left: 90px;
+    }
+    .text-banner:nth-of-type(2){
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 0px;
+        position: relative;
+        left: 70px;
+    }
+    .text-banner:nth-of-type(3){
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 0;
+        position: relative;
+        left: 50px;
+    }
+    .text-container{
+        padding: 50px;
+    }
+    .text-banner:nth-of-type(4){
+        width: 250px;
+        height:  30px;
+        color: rgb(20, 20, 20);
+        background-image: url(../imagens/text-container-white.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: center;
+        padding: 5px;
+        position: relative;
+        left: -20px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    section.banner{
+        height: 70vh;
+        min-height: 0;
+        max-height: 800px;
+    }
+    
+}
+/***FIM SECTION BANNER***/
+
+/***SECTION VEÍCULOS-DESTAQUE***/
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+
+.destaque-titulo{
+    text-align: center;
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.linha{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 20px;
+    background:black;
+}
+
+.destaque-titulo h2{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    background: rgb(255, 255, 255);
+}
+
+.veiculos-destaque > .container{
+    max-width: 800px;
+    padding: 40px 0;
+}
+
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+    overflow: hidden;
+}
+.vitrine-foto{
+    border: 8px solid white;
+}
+
+.vitrine-texto{
+    padding-left: 8px;
+}
+.vitrine-texto a{
+    margin-top: 8px ;
+     
+}
+
+.btn1{
+    width: 150px; 
+    padding: 10px;
+    background-color: #a80909;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 5px solid #eb2c2c;
+}
+
+@media screen and (max-width: 768px){
+    .veiculos-destaque > .container{
+        display: inline-block;
+        text-align: center;
+    }
+    .vitrine-destaque{
+        float: none;
+        width: 80%; 
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .vitrine-texto a{
+        display: inline-block;
+    }
+}
+/***FIM SECTION VEÍCULOS-DESTAQUE***/
+
+/***SECTION SERVICOS***/
+section.servicos{
+    display: flex;
+}
+
+.part1{
+    width: 50%;
+    padding:90px 2%;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+}
+
+.part1-wrapper{
+    display: inline-block;
+    text-align: left;
+}
+
+.part1-wrapper h2{
+    font-size: 40px;
+    font-style: italic;
+}
+.part1-wrapper ul{
+    display: inline-block;
+    margin-top: 20px;
+}
+.part1-wrapper li{
+    margin-left: 20px;
+}
+.part1-wrapper a{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 50px;
+}
+
+.part2{
+    width: 50%;
+    padding:90px 2%;
+    background-color: #eb2c2c;
+    color: white;
+    text-align: left;
+}
+.part2 h2{
+    font-size: 40px;
+    font-style: italic;
+}
+.part2-depoimentos{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.navigation{
+    float: left;
+    margin-top: 30px;
+}
+.navigation img{
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.nome-depoimento{
+    margin-top: 20px;
+    float: right;
+    margin-right: 80px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:840px){
+    .part1-wrapper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:1024px){
+    section.servicos{
+        flex-direction: column;
+    }
+    
+    .part1{
+        display: inline-block;
+        width: 100%;
+        padding:90px 2%;
+    }
+    .part2{
+        display: inline-block;
+        width: 100%;
+        padding:90px 5%;
+    }
+}
+
+/***FIM SECTION SERVICOS***/
