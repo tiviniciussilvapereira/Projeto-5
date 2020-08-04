@@ -260,7 +260,7 @@ section.veiculos-destaque{
     padding: 90px 2%;
 }
 
-.veiculos-destaque > .container{
+.veiculos-destaque  .container{
     max-width: 800px;
     padding: 40px 0;
 }
@@ -268,18 +268,21 @@ section.veiculos-destaque{
 .vitrine-destaque{
     float: left;
     width: 33.3%;
-    overflow: hidden;
-}
-.vitrine-foto{
-    border: 8px solid white;
 }
 
-.vitrine-texto{
-    padding-left: 8px;
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    border: 5px solid white;
 }
-.vitrine-texto a{
-    margin-top: 8px ;
-     
+
+.info-carro{
+    margin-left: 5px;
+}
+
+.info-carro a{
+    margin-top: 10px;
 }
 
 .btn1{
@@ -295,17 +298,17 @@ section.veiculos-destaque{
 }
 
 @media screen and (max-width: 768px){
-    .veiculos-destaque > .container{
+    .veiculos-destaque .container{
         display: inline-block;
         text-align: center;
     }
     .vitrine-destaque{
         float: none;
-        width: 80%; 
+        width: 60%; 
         display: inline-block;
         margin-top: 20px;
     }
-    .vitrine-texto a{
+    .info-carro a{
         display: inline-block;
     }
 }
@@ -471,7 +474,7 @@ section.venda{
 }
 
 .barra-preco{
-    width: 300px;
+    width: 90%;
     height: 20px;
     background: white;
     margin-top: 8px;
@@ -498,7 +501,68 @@ section.venda{
     left: calc(30% - 15px);
     background: #242424;
     border-radius: 20px;
-    
+    cursor: pointer;    
+}
+
+.valor-barra-pesquisa{
+    margin-top: 12px;
+    width: 90%;
+}
+
+.valor-barra-pesquisa  p:nth-of-type(1){
+    float: left;
+}
+
+.valor-barra-pesquisa  p:nth-of-type(2){
+    float: right;
+}
+.pesquisa2{
+    padding-top: 35px;
+}
+.pesquisa2 h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+.form-wrapper{
+    padding-top: 5px;
+}
+
+.vitrine-venda{
+    width: 70%;
+    float: left;
+}
+
+.vitrine-venda .vitrine-destaque{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .vitrine-venda{
+        width: 100%;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+    .pesquisa1{
+        display: inline-block;
+        width: 100%;
+    }
+    .pesquisa2{
+        display: inline-block;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .vitrine-venda{
+        float: none;
+        width: 100%;
+        display: inline-block;
+        text-align: center;        
+    }
 }
 
 /***FIM SECTION VENDA***/
