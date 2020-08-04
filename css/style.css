@@ -19,6 +19,32 @@ html, body{
 .clear{
     clear: both;
 }
+
+
+.linha-titulo{
+    text-align: center;
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.linha{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 20px;
+    background:black;
+}
+
+.linha-titulo h2{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    background: rgb(255, 255, 255);
+}
 /***FIM DIVS GERAIS***/
 
 
@@ -103,6 +129,7 @@ header nav.menu-mobile ul li a{
 
     nav.menu-mobile:hover ul{
         display: block;
+        z-index: 999;
     }
 }
 /***FIM HEADER***/
@@ -231,31 +258,6 @@ section.banner{
 /***SECTION VEÍCULOS-DESTAQUE***/
 section.veiculos-destaque{
     padding: 90px 2%;
-}
-
-.destaque-titulo{
-    text-align: center;
-    position: relative;
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-.linha{
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    top: 20px;
-    background:black;
-}
-
-.destaque-titulo h2{
-    position: relative;
-    display: inline-block;
-    width: 250px;
-    text-align: center;
-    font-size: 27px;
-    text-transform: uppercase;
-    background: rgb(255, 255, 255);
 }
 
 .veiculos-destaque > .container{
@@ -404,30 +406,6 @@ section.contato{
     padding: 90px 2%;
 }
 
-.contato-titulo{
-    text-align: center;
-    position: relative;
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-.linha{
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    top: 20px;
-    background:black;
-}
-
-.contato-titulo h2{
-    position: relative;
-    display: inline-block;
-    width: 250px;
-    text-align: center;
-    font-size: 27px;
-    text-transform: uppercase;
-    background: rgb(255, 255, 255);
-}
 
 section.contato form{
     max-width: 800px;
@@ -471,6 +449,61 @@ section.contato textarea{
 }
 /***FIM SECTION CONTATOS***/
 
+
+/***SECTION VENDA***/
+section.venda{
+    padding: 90px;
+    min-height: 80%;
+}
+
+.conteudo-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+}
+
+.pesquisa1 h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.barra-preco{
+    width: 300px;
+    height: 20px;
+    background: white;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 20px;
+    background: gray;
+    border-radius: 20px;
+}
+
+.barra-pointer{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: calc(30% - 15px);
+    background: #242424;
+    border-radius: 20px;
+    
+}
+
+/***FIM SECTION VENDA***/
+
+
 /***FOOTER***/
 
 footer{
@@ -512,5 +545,4 @@ footer p{
         text-align: center;
     }
 }
-
 /***FIM FOOTER***/
