@@ -404,6 +404,7 @@ section.servicos{
         padding:90px 5%;
     }
 }
+
 /***SECTION CONTATOS***/
 section.contato{
     padding: 90px 2%;
@@ -452,6 +453,8 @@ section.contato textarea{
 }
 /***FIM SECTION CONTATOS***/
 
+
+/***VENDA.HTML***/
 
 /***SECTION VENDA***/
 section.venda{
@@ -566,6 +569,71 @@ section.venda{
 }
 
 /***FIM SECTION VENDA***/
+
+/***FIM VENDA.HTML***/
+
+/***SOBRE.HTML***/
+
+/***SECTION SOBRE***/
+section.sobre{
+    padding: 90px;
+    min-height: 80%;
+}
+
+.template-sobre{
+    width: 640px;
+    height: 320px;
+    background-color: #ccc;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+section.sobre > .container{
+    max-width: 640px;
+}
+
+.texto-sobre{
+    margin-top: 35px;
+}
+
+.texto-sobre h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.texto-sobre p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 35px 0;
+}
+
+.texto-sobre span{
+    color: #a80909;
+    font-size: 40px;
+}
+
+.proprietario-container{
+    padding: 20px 0;
+}
+
+.foto-proprietario{
+    width: 25%;
+    padding-top: 25%;
+    background-color: #ccc;
+    float: left;
+}
+
+.texto-proprietario{
+    width: 70%;
+    float: left;
+}
+.texto-proprietario p{
+    margin-left: 25px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+/***FIM SECTION SOBRE***/
+/***FIM SOBRE.HTML***/
 
 
 /***FOOTER***/
