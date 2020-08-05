@@ -455,7 +455,6 @@ section.contato textarea{
 
 
 /***VENDA.HTML***/
-
 /***SECTION VENDA***/
 section.venda{
     padding: 90px;
@@ -650,46 +649,157 @@ section.sobre > .container{
         margin-top: 25px;
         display: inline-block;
         margin-left: -25px;
-    }
-    
+    } 
 }
-
 /***FIM SECTION SOBRE***/
 /***FIM SOBRE.HTML***/
 
+/***VENDA-INDIVIDUAL.HTML***/
+section.venda-single  .linha-titulo{
+    margin: 40px auto;
+}
+
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding: 45px;
+    margin-top: 15px;
+  
+}
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.descricao-veiculo p{
+    padding-top: 20px;
+}
+
+.descricao-veiculo a{
+    margin-top: 20px;
+}
+
+.nav-galeria{
+    width: 100%;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.nav-galeria-wrapper{
+    width: 200%;
+}
+
+.mini-img{
+    float: left;
+    padding-top: calc(33.3% * (100 / 200) * 0.8);
+    width: calc(33.3% * (100 / 200));
+    border: 5px solid white;
+    background-position: center;
+    background-size: cover;
+}
+
+nav.breadcrumb ul{
+    padding: 10px 16px;
+    list-style: none;
+}
+
+nav.breadcrumb ul li{
+    display: inline;
+    font-size: 20px;
+}
+
+nav.breadcrumb ul li a{
+    text-decoration: none;
+    color: #242424;
+}
+
+nav.breadcrumb ul li+li::before{
+    padding: 20px;
+    color: #242424;
+    content: "/";
+}
+
+nav.breadcrumb ul li a:hover{
+    text-decoration: underline;
+}
+
+.destaques-venda-individual{
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.destaques-venda-individual .linha-titulo{
+    margin: 40px auto
+}
+
+
+
+
+@media screen and (max-width: 968px){
+    .info-veiculo{
+        float: left;
+        width: 100%;
+    }
+    .descricao-veiculo{
+        float: left;
+        width: 100%;
+        padding: 45px;
+        margin-top: 15px;
+    }
+    .descricao-veiculo a{
+        margin: 50px auto;
+    }
+    .vitrine-venda-individual{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+}
+/***FIM VENDA-INDIVIDUAL.HTML***/
+
+/***CONTATO.HTML***/
+section.contato{
+    padding: 90px 0;
+    min-height: 80%;
+}
+/***FIM-CONTATO.HTML***/
 
 /***FOOTER***/
-
 footer{
     padding: 40px 0;
     background-color: #242424;
 }
-
 .menu-footer{
     float: left;
 }
-
 .menu-footer ul{
     list-style-type: none;
 }
-
 .menu-footer li{
     float: left;
     padding-left: 20px;
 }
-
 .menu-footer li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-
 footer p{
     float: right;
     color: white;
     font-size: 20px;
 }
-
 @media screen and (max-width: 768px){
     .menu-footer{
         display: none;
