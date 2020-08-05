@@ -581,8 +581,8 @@ section.sobre{
 }
 
 .template-sobre{
-    width: 640px;
-    height: 320px;
+    width: 100%;
+    padding-top: 50%;
     background-color: #ccc;
     margin: 0 auto;
     margin-top: 60px;
@@ -630,6 +630,28 @@ section.sobre > .container{
     margin-left: 25px;
     text-align: justify;
     line-height: 30px;
+}
+
+@media screen and (max-width:768px){
+
+    .proprietario-container{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .foto-proprietario{
+        width: 250px;
+        padding-top: 250px;
+        float: none;
+        display: inline-block;
+    }
+    .texto-proprietario{
+        width: 100%;
+        float: none;
+        margin-top: 25px;
+        display: inline-block;
+        margin-left: -25px;
+    }
+    
 }
 
 /***FIM SECTION SOBRE***/
