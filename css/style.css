@@ -489,7 +489,7 @@ section.venda{
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 0;
     height: 20px;
     background: gray;
     border-radius: 20px;
@@ -500,7 +500,7 @@ section.venda{
     height: 30px;
     position: absolute;
     top: -5px;
-    left: calc(30% - 15px);
+    left: 0;
     background: #242424;
     border-radius: 20px;
     cursor: pointer;    
@@ -687,24 +687,52 @@ section.venda-single  .linha-titulo{
 .descricao-veiculo a{
     margin-top: 20px;
 }
-
-.nav-galeria{
+.nav-galeria-parent{
     width: 100%;
-    margin-top: 15px;
-    overflow: auto;
+    padding: 35px; 
+    position: relative;
+
+}
+.seta-esquerda{
+    background-image: url(../imagens/left-arrow.png);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left:5px;
+    top: 50%;
+    cursor: pointer;
 }
 
-.nav-galeria-wrapper{
-    width: 200%;
+.seta-direita{
+    background-image: url(../imagens/right-arrow.png);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    cursor: pointer;
+}
+.nav-galeria{
+    width: 100%;
+    overflow: hidden;
+}
+
+.mini-img-wrapper{
+    float: left;
+    padding: 9px;
+    
+   
 }
 
 .mini-img{
-    float: left;
-    padding-top: calc(33.3% * (100 / 200) * 0.8);
-    width: calc(33.3% * (100 / 200));
-    border: 5px solid white;
+    width: 100%;
+    padding-top: 70%;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
+
 }
 
 nav.breadcrumb ul{
@@ -741,9 +769,6 @@ nav.breadcrumb ul li a:hover{
 .destaques-venda-individual .linha-titulo{
     margin: 40px auto
 }
-
-
-
 
 @media screen and (max-width: 968px){
     .info-veiculo{
