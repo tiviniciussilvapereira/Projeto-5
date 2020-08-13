@@ -125,7 +125,55 @@ $(function(){
         $('.mini-img-wrapper').eq(0).click();
     }
 
+    //Navagação no section.serviços -> depoimentos
 
+    var amtDepoimentos = $('.part2-depoimentos p').length; 
+    var depAtual = 0; 
+    var amtNomes = $('.nome-depoimento p').length;
+    var nomeAtual = 0; 
+    
+    iniciarDepoimentos();
+    navegarDepoimentos();
+    
 
+    function iniciarDepoimentos(){
+        $('.nome-depoimento p').hide();
+        $('.nome-depoimento p').eq(0).show();
+        $('.part2-depoimentos p').hide();
+        $('.part2-depoimentos p').eq(0).show();
+    }
+    function navegarDepoimentos(){
+        $('[next]').click(function(){
+             depAtual++;
+             nomeAtual++;
+             if(depAtual >= amtDepoimentos)
+                depAtual = 0;  
+
+            if(nomeAtual >= amtNomes)
+                nomeAtual = 0; 
+
+            $('.part2-depoimentos p').hide();
+            $('.part2-depoimentos p').eq(depAtual).show();
+            $('.nome-depoimento p').hide();
+            $('.nome-depoimento p').eq(nomeAtual).show();
+            disableTextSelection();
+        
+        })
+        $('[prev]').click(function(){
+            depAtual--;
+            nomeAtual--;
+             if(depAtual < 0)
+                depAtual = amtDepoimentos-1;  
+
+            if(nomeAtual < 0)
+                nomeAtual = amtNomes-1; 
+
+            $('.part2-depoimentos p').hide();
+            $('.part2-depoimentos p').eq(depAtual).show();
+            $('.nome-depoimento p').hide();
+            $('.nome-depoimento p').eq(nomeAtual).show();
+            disableTextSelection();
+        })
+    }
 
 });
