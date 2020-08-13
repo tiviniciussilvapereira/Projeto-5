@@ -176,4 +176,8 @@ $(function(){
         })
     }
 
+    sliderContainer(); 
+    function sliderContainer(){
+        
+    }
 });

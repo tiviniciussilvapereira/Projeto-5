@@ -134,6 +134,7 @@ header nav.menu-mobile ul li a{
 }
 /***FIM HEADER***/
 
+
 /***SECTION BANNER**/
 section.banner{
     width: 100%;
@@ -361,17 +362,24 @@ section.servicos{
     font-style: italic;
 }
 .part2-depoimentos{
+    width: 80%;
+    height: 150px;
     margin-top: 20px;
     font-size: 20px;
 }
 
 .navigation{
     float: left;
-    margin-top: 30px;
+    position: relative;
 }
 .navigation img{
-    margin: 0 25px;
+    left: 0; 
+    top: 80px;
+    position: absolute;
     cursor: pointer;
+}
+.navigation img:nth-of-type(2){
+    left: 50px; 
 }
 
 .nome-depoimento{
@@ -408,6 +416,7 @@ section.servicos{
 /***SECTION CONTATOS***/
 section.contato{
     padding: 90px 2%;
+    min-height: 90%;
 }
 
 
@@ -458,7 +467,7 @@ section.contato textarea{
 /***SECTION VENDA***/
 section.venda{
     padding: 90px;
-    min-height: 80%;
+    min-height: 90%;
 }
 
 .conteudo-venda{
@@ -576,13 +585,14 @@ section.venda{
 /***SECTION SOBRE***/
 section.sobre{
     padding: 90px;
-    min-height: 80%;
+    min-height: 90%;
 }
 
 .template-sobre{
     width: 100%;
     padding-top: 50%;
-    background-color: #ccc;
+    background-image: url(../imagens/Banner1.png);
+    background-size: contain;
     margin: 0 auto;
     margin-top: 60px;
 }
@@ -617,7 +627,9 @@ section.sobre > .container{
 .foto-proprietario{
     width: 25%;
     padding-top: 25%;
-    background-color: #ccc;
+    background-image: url(../imagens/user.png);
+    background-position: center;
+    background-size: 100% 100%;
     float: left;
 }
 
