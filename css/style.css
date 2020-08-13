@@ -99,17 +99,20 @@ nav.menu-mobile ul{
     list-style-type: none;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 0;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
 
 header nav.menu-mobile ul li{
     padding: 10px 0;
     border-bottom: 2px solid rgb(20, 20, 20);
+}
 
+header nav.menu-mobile ul li:hover{
+    background-color: rgba(128, 128, 128, 0.8);
 }
 header nav.menu-mobile ul li a{
     text-decoration: none;
@@ -125,12 +128,12 @@ header nav.menu-mobile ul li a{
     }
     nav.menu-mobile{
         display: block;
+        
     }
-
-    nav.menu-mobile:hover ul{
-        display: block;
+    nav.menu-mobile ul{
         z-index: 999;
     }
+    
 }
 /***FIM HEADER***/
 
