@@ -259,6 +259,11 @@ section.banner{
 }
 /***FIM SECTION BANNER***/
 
+
+
+
+
+
 /***SECTION VEÍCULOS-DESTAQUE***/
 section.veiculos-destaque{
     padding: 90px 2%;
@@ -274,15 +279,15 @@ section.veiculos-destaque{
     width: 33.3%;
 }
 
-.vitrine-destaque .carro-img{
-    width: 100%;
-    padding-top: 100%;
-    background-size: 100% 100%;
-    border: 5px solid white;
+.vitrine-destaque .carro-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 8px solid white;
 }
 
 .info-carro{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .info-carro a{
@@ -298,6 +303,7 @@ section.veiculos-destaque{
     text-align: center;
     color: white;
     text-transform: uppercase;
+    margin-left: 2px;
     border-bottom: 5px solid #eb2c2c;
 }
 
